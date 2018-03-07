@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppGitHub</string>
+    <string name="sistema_de_login">Sistema de Login</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="sair">Sair</string>
+</resources>
