@@ -1,5 +1,6 @@
 package br.com.etecia.appgithub;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,10 +21,8 @@ public class Login_Activity extends AppCompatActivity {
     }
 
     public void sairSistema(View view){
-        String usuario = txtUsuario.getText().toString();
-        String senha = txtSenha.getText().toString();
-        usuario = "";
-        senha = "";
+        txtUsuario.setText("");
+        txtSenha.setText("");
         Toast.makeText(Login_Activity.this,txtUsuario.getText()+"sairSistema em contrução",Toast.LENGTH_SHORT).show();
     }
 
@@ -32,6 +31,8 @@ public class Login_Activity extends AppCompatActivity {
         String senha = txtSenha.getText().toString();
 
         if(usuario.equals("etecia") && senha.equals("etecia")){
+            Intent intent = new Intent( Login_Activity.this, PrincipalActivity.class);
+            startActivity(intent);
             Toast.makeText(Login_Activity.this,txtUsuario.getText()+" Bem vindo ao Sistema",Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(Login_Activity.this,"Senha  ou Usuário Invalidos",Toast.LENGTH_SHORT).show();
