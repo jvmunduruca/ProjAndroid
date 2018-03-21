@@ -1,62 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.etecia.appgithub.Login_Activity"
     android:background="@color/cordefundo"
+    android:orientation="vertical"
+    tools:context="br.com.etecia.appgithub.Login_Activity"
+
     >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sistema_de_login"
-        android:textSize="30sp"
         android:layout_gravity="center"
-        />
+        android:text="@string/sistema_de_login"
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/usuario"
         android:background="#80ffffff"
-        android:textSize="20sp"
-        android:paddingTop="20dp"
+        android:hint="@string/usuario"
         android:inputType="textPersonName"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
 
         />
+
     <EditText
         android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/senha"
         android:background="#80ffffff"
-        android:textSize="20sp"
-        android:paddingTop="20dp"
+        android:hint="@string/senha"
         android:inputType="textPassword"
-        />
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnEntrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/entrar"
-        android:background="#92e992"
-        android:onClick="entrarSistema"/>
-    <Button
-        android:id="@+id/btnSair"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sair"
-        android:background="#e49a9a"
-        android:onClick="sairSistema"/>
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#92e992"
+            android:onClick="entrarSistema"
+            android:text="@string/entrar"
+
+            />
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e49a9a"
+            android:onClick="sairSistema"
+            android:text="@string/sair" />
     </LinearLayout>
 
 </LinearLayout>
